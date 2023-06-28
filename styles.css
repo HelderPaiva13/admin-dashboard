@@ -90,7 +90,7 @@ body {
 .search input {
   border-radius: 10px;
   flex: 1;
-
+  max-heigth: 2rem;
   border: none;
   background-color: var(--cinza);
   outline: 0;
