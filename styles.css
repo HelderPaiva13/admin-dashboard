@@ -9,6 +9,7 @@
 :root {
   --azulPrincipal: #0ea5e9;
   --cinza: #d1d5db;
+  --amber: #fbbf24;
 }
 
 body {
@@ -133,7 +134,7 @@ body {
   width: 3.125rem;
   heigth: 3.125rem;
   border-radius: 50%;
-  background-color: var(--azulPrincipal);
+  background-color: var(--amber);
   margin-left: 1rem;
   
 }
@@ -174,47 +175,57 @@ body {
 }
 
 .content {
-  grid-row: 2/3;
-  background-color: red;
+  grid-row: 2/3; 
   display: grid;
   grid-template-columns: 3fr 1fr;
+  background-color: var(--cinza);
 }
 
 .displayLeft {
   display: flex;
   flex-direction: column;
-  background-color: var(--cinza);
+  
   
 }
 
 .displayRight {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  background-color: var(--cinza);
   gap: 1rem;
+  margin-right: 1rem;
   
 }
 
 .annoucements {
   display: flex;
   flex-direction: column;
-  border: 2px solid;
-  padding: 1rem;
+  
 }
 
-.contentAnnoucements {
+.contentRight {
   background-color: white;
   border-radius: 5px;
   padding: 1rem;
 }
 
+.contentRight div {
+  border-bottom: 1px solid var(--cinza);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
 
 .treding{
-  border: 2px solid;
+  
 }
 
 .titulo {
   padding: 1rem 1rem 0 1rem;
+  font-weight: bold;
+}
+
+.tituloRight {
+  padding: 1rem 1rem 1rem 0rem;
   font-weight: bold;
 }
 
@@ -235,7 +246,7 @@ body {
 
 .project {
   display: grid;
-  border-left: 0.5rem solid var(--azulPrincipal);
+  border-left: 0.5rem solid var(--amber);
 }
 
 .btnProjects ul {
